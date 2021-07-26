@@ -1,1 +1,1 @@
-https://exekuta.github.io/rsschool-cv/cv
+https://exekuta.github.io/rsschool-cv/
