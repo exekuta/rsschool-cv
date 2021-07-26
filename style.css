@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.cv {
+body {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     color: #336;
@@ -19,3 +19,6 @@ hr {
     width: 50%;
 }
 
+footer {
+    margin-bottom: 20px;
+}
