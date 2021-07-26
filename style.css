@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body {
+.container {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     color: #336;
     text-align: center;
-    width: 50%;
+    width: 70%;
     position: absolute;
     left: 0; right: 0;
     margin-left: auto; margin-right: auto;
+    max-width: 1000px;
 }
 
 ul {
@@ -17,7 +18,7 @@ ul {
 
 hr {
     width: 50%;
-    border-style:solid
+    border-style: solid;
 }
 
 footer {
