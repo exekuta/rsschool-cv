@@ -1,11 +1,15 @@
 # **Pozdnyakov Andrey**
 ## Junior Frontend developer
+
 ---
+
 ## Contacts:
 ### **e-mail:** exekuta@gmail.com,
 ### **phone:** +7 (917) 253-53-86
 ### [My CODEWARS](https://www.codewars.com/users/exekuta/), [My GitHub](https://github.com/exekuta/)
+
 ---
+
 ## Brief info about me:
 35 years old, engineer and father of 2 sons :) Currently I live and work in Kazan.<br>
 During my studies at the university (in the early 2000s) I was engaged in the development of simple websites, freelance projects. Later when I worked in the Ministry of culture I developed interactive teaching materials **(HTML, CSS, Flash)**. After graduation, I got a job at the Kazan helicopter plant and still work there.<br>
