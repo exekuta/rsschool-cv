@@ -3,3 +3,10 @@
   align-items: $align;
   justify-content: $just;
 }
+
+@mixin pseudoEl($content: "", $pos: absolute, $top: 0, $zind: -1) {
+  content: $content;
+  position: $pos;
+  top: $top;
+  z-index: $zind;
+}

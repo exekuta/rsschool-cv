@@ -1,0 +1,29 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.header-container {
+  max-width: 1440px;
+}
+
+.navigation {
+  @include dflex(center, center);
+
+  .nav-item {
+    @include dflex();
+    
+    gap: 40px;
+  }
+  
+  .languageToggler {
+    color: $pageFontColor;
+  }
+
+  &:before {
+    @include pseudoEl("", absolute, 71px);
+
+    width: 1340px;
+    background: white;
+    height: 5px;
+  }
+}
+

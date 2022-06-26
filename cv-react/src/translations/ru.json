@@ -1,0 +1,15 @@
+{
+  "lng": "Русский",
+  "Header": {
+    "Name": "АНДРЕЙ",
+    "AboutMe": "Обо мне",
+    "Skills": "Навыки",
+    "WorkXp": "Опыт работы",
+    "Education": "Образование",
+    "Languages": "Языки",
+    "Projects": "Мои проекты",
+    "BtnGroupAriaLabel": "Кнопки переключения языка",
+    "LanguageEn": "Англ",
+    "LanguageRu": "Рус"
+  }
+}

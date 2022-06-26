@@ -1,0 +1,15 @@
+{
+  "lng": "English",
+  "Header": {
+    "Name": "ANDREY",
+    "AboutMe": "About Me",
+    "Skills": "Skills",
+    "WorkXp": "Work XP",
+    "Education": "Education",
+    "Languages": "Languages",
+    "Projects": "My Projects",
+    "BtnGroupAriaLabel": "Language switcher buttons",
+    "LanguageEn": "En",
+    "LanguageRu": "Ru"
+  }
+}

@@ -10,21 +10,28 @@ import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Projects from '../Projects/Projects';
 import Skills from '../Skills/Skills';
+import { Box, CssBaseline } from '@mui/material';
 import './App.scss';
+import MuiTheme from '../MuiTheme/MuiTheme';
 
 function App() {
   return (
-    <div className="main-container">
-      <Header />
-      <main>
-        <Main />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-      </main>
-      <Footer />
-    </div>
+    <MuiTheme>
+      <React.Fragment>
+        <CssBaseline />
+        <Box component="div" className="main-container">
+          <Header />
+          <Box component="main">
+            <Main />
+            <About />
+            <Skills />
+            <Experience />
+            <Projects />
+          </Box>
+          <Footer />
+        </Box>
+      </React.Fragment>
+    </MuiTheme>
   );
 }
 
