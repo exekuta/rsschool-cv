@@ -1,13 +1,15 @@
 import React from 'react';
+import { Box, Typography } from '@mui/material';
+import './Main.scss';
 
 const Main = () => {
   return (
-    <section>
-      <h2>ANDREY</h2>
-      <h2>Pozdnyakov</h2>
-      <h2>Front-End Developer</h2>
-    </section>
-  )
-}
+    <Box component="section" className="title">
+      <Typography>ANDREY</Typography>
+      <Typography>Pozdnyakov</Typography>
+      <Typography>Front-End Developer</Typography>
+    </Box>
+  );
+};
 
 export default Main;

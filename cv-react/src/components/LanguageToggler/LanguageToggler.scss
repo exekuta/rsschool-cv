@@ -1,0 +1,9 @@
+.button {
+  border-color: white;
+  color: white;
+
+  &.active {
+    background-color: white;
+    color: transparent;
+  }
+}

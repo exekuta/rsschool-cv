@@ -17,15 +17,15 @@ const Header = () => {
         sx={{ boxShadow: 'none' }}
       >
         <Box component="nav" className="navigation">
-          <Typography className="nav-item" sx={{ fontSize: '28px', fontWeight: '600' }}>
-            <Link
-              href="#top"
-              underline="none"
-              color="white"
-              sx={{ fontSize: '42px', fontWeight: '600', padding: '0px 85px 0px 20px' }}
-            >
-              {t('Header.Name')}
-            </Link>
+          <Link
+            href="#top"
+            underline="none"
+            color="white"
+            sx={{ fontSize: '42px', fontWeight: '600' }}
+          >
+            {t('Header.Name')}
+          </Link>
+          <Typography className="nav-item" sx={{ fontSize: '26px', fontWeight: '600' }}>
             <Link href="#about" underline="none" color="white">
               {t('Header.AboutMe')}
             </Link>
@@ -44,8 +44,8 @@ const Header = () => {
             <Link href="#projects" underline="none" color="white">
               {t('Header.Projects')}
             </Link>
+            <LanguageToggler />
           </Typography>
-          <LanguageToggler />
         </Box>
       </AppBar>
     </StyledEngineProvider>
