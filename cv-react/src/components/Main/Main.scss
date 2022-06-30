@@ -1,6 +1,38 @@
 @import "../../assets/scss/variables";
 @import "../../assets/scss/mixins";
 
-.title {
-  @include dflex(flex-start, center);
+.name-container {
+  @include dflex(space-between, center);
+
+  width: 1340px;
+}
+
+.titles {
+  @include dflex(center, flex-start);
+  flex-direction: column;
+  height: 800px;
+  // padding-top: 200px;
+}
+
+.avatar {
+  @include dflex(center, center);
+  flex-direction: column;
+}
+
+.contacts {
+  @include dflex(space-between, center);
+
+  width: 1340px;
+
+  &:before {
+    @include pseudoEl("", absolute, 921px);
+
+    width: 1340px;
+    background: white;
+    height: 5px;
+  }
+}
+
+.contacts-item {
+  @include dflex();
 }

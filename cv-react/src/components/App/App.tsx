@@ -19,9 +19,9 @@ function App() {
     <MuiTheme>
       <React.Fragment>
         <CssBaseline />
-        <Box component="div" className="main-container">
+        <Box component="div" className="page-container">
           <Header />
-          <Box component="main">
+          <Box component="main" className="main-container">
             <Main />
             <About />
             <Skills />

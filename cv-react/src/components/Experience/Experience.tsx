@@ -13,7 +13,7 @@ const Experience = () => {
         <h2>LANGUAGES</h2>
       </section>
     </>
-  )
-}
+  );
+};
 
 export default Experience;

@@ -11,5 +11,11 @@
     "BtnGroupAriaLabel": "Кнопки переключения языка",
     "LanguageEn": "Англ",
     "LanguageRu": "Рус"
+  },
+  "Main": {
+    "FirstName": "АНДРЕЙ",
+    "LastName": "Поздняков",
+    "JobTitle": "Front-End Разработчик",
+    "AboutMeBtn": "ОБО МНЕ"
   }
 }

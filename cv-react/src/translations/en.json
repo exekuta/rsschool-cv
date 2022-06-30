@@ -11,5 +11,11 @@
     "BtnGroupAriaLabel": "Language switcher buttons",
     "LanguageEn": "En",
     "LanguageRu": "Ru"
+  },
+  "Main": {
+    "FirstName": "ANDREY",
+    "LastName": "Pozdnyakov",
+    "JobTitle": "Front-End Developer",
+    "AboutMeBtn": "ABOUT ME"
   }
 }

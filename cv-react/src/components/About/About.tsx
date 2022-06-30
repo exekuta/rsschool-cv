@@ -5,7 +5,7 @@ const About = () => {
     <section>
       <h2>ABOUT ME</h2>
     </section>
-  )
-}
+  );
+};
 
 export default About;

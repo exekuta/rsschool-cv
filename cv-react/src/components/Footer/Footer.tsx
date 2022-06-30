@@ -7,7 +7,7 @@ const Footer = () => {
         <h2>FOOTER</h2>
       </footer>
     </section>
-  )
-}
+  );
+};
 
 export default Footer;
