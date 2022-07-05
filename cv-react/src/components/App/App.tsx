@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import avatar from './assets/images/avatar.jpg';
 // import player from './assets/images/custom-video-player.png';
 // import clock from './assets/images/js-clock.png';
@@ -15,6 +15,10 @@ import './App.scss';
 import MuiTheme from '../MuiTheme/MuiTheme';
 
 function App() {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+  }, []);
+
   return (
     <MuiTheme>
       <React.Fragment>

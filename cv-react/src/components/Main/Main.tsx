@@ -1,11 +1,11 @@
 import React from 'react';
-import { Box, Typography, Avatar, Button } from '@mui/material';
+import { Box, Typography, Avatar, Button, Link } from '@mui/material';
 import { FaPhone, FaEnvelope, FaPrint } from 'react-icons/fa';
 import { SiCodewars, SiGithub, SiTelegram } from 'react-icons/si';
+import { IconContext } from 'react-icons';
 import { useTranslation } from 'react-i18next';
 import avatar from '../../assets/images/avatar.jpg';
 import './Main.scss';
-import { IconContext } from 'react-icons';
 
 const Main = () => {
   const { t } = useTranslation();
@@ -35,6 +35,7 @@ const Main = () => {
           />
           <Button
             variant="contained"
+            href="#about"
             sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '40px', marginTop: '200px' }}
           >
             {t('Main.AboutMeBtn')}
@@ -96,15 +97,24 @@ const Main = () => {
           </Typography>
         </Box>
         <Box component="div" className="contacts-item" sx={{ gap: '25px' }}>
-          <IconContext.Provider value={{ size: '35px' }}>
-            <FaPrint />
-          </IconContext.Provider>
-          <IconContext.Provider value={{ size: '35px' }}>
-            <SiCodewars />
-          </IconContext.Provider>
-          <IconContext.Provider value={{ size: '35px' }}>
-            <SiGithub />
-          </IconContext.Provider>
+          <Link
+            href="https://app.rs.school/cv/18683e07-f4e2-4eb9-91df-8ebec97e3ad7"
+            sx={{ color: 'red' }}
+          >
+            <IconContext.Provider value={{ size: '35px' }}>
+              <FaPrint />
+            </IconContext.Provider>
+          </Link>
+          <Link href="https://www.codewars.com/users/exekuta/" sx={{ color: 'white' }}>
+            <IconContext.Provider value={{ size: '35px' }}>
+              <SiCodewars />
+            </IconContext.Provider>
+          </Link>
+          <Link href="https://github.com/exekuta/" sx={{ color: 'white' }}>
+            <IconContext.Provider value={{ size: '35px' }}>
+              <SiGithub />
+            </IconContext.Provider>
+          </Link>
         </Box>
       </Box>
     </>
