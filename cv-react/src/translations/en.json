@@ -7,7 +7,7 @@
     "WorkXp": "Work XP",
     "Education": "Education",
     "Languages": "Languages",
-    "Projects": "My Projects",
+    "Projects": "My projects",
     "BtnGroupAriaLabel": "Language switcher buttons",
     "LanguageEn": "En",
     "LanguageRu": "Ru"
@@ -27,6 +27,32 @@
   },
   "Skills": {
     "Title": "My skills",
+    "UsedFeatures": "What I use in my work:",
     "WorkXPBtn": "Work XP"
+  },
+  "Experience": {
+    "Title": "My work experience - 14+ years",
+    "WorkXP1": "1,5 years - ",
+    "WorkXP1Text": "Developer of interactive teaching material (Ministry of culture, Republic of Tatarstan)",
+    "WorkXP2": "12+ years - ",
+    "WorkXP2Text": "Senior Commissioning and Testing Engineer (Kazan Helicopters Plant, JSC)",
+    "WorkXP3": "1+ year - ",
+    "WorkXP3Text": "Front-End Developer in freelance projects",
+    "Education": "Education",
+    "Education1": "Radio equipment maintenance engineer",
+    "Education1Text": "(Kazan National Research Technical University - KAI)",
+    "Education2": "Professional communication translator",
+    "Education2Text": "(Kazan National Research Technical University - KAI)",
+    "Education3": "Introduction to development in JavaScript",
+    "Education3Text": "(SoftLine Education)",
+    "Education4": "Front-End Developer (JavaScript/React)",
+    "Education4Text": "(RSSchool)",
+    "Education5": "Udemy and Codecademy Web-developer courses",
+    "Education6": "Various advanced training courses on aviation technological topics",
+    "Languages": "Languages",
+    "Languages1": "B2 — ",
+    "Languages1Text": "Upper Intermediate",
+    "Languages2Text": "I had been on a business trip to India for 14 months, worked as part of a warranty & maintenance team.",
+    "ProjectsBtn": "MY PROJECTS"
   }
 }

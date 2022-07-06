@@ -27,6 +27,32 @@
   },
   "Skills": {
     "Title": "Мои навыки",
+    "UsedFeatures": "Что я использую в своей работе:",
     "WorkXPBtn": "Опыт работы"
+  },
+  "Experience": {
+    "Title": "Мой опыт работы - более 14 лет",
+    "WorkXP1": "1,5 года - ",
+    "WorkXP1Text": "Разработчик учебных интерактивных материалов (Министерство культуры, Татарстан)",
+    "WorkXP2": "12+ years - ",
+    "WorkXP2Text": "Старший инженер по наладке и испытаниям (АО 'Казанский Вертолетный Завод')",
+    "WorkXP3": "1+ year - ",
+    "WorkXP3Text": "Front-End разработчик в различных фриланс проектах",
+    "Education": "Образование",
+    "Education1": "Инженер радиоэлектронного оборудования",
+    "Education1Text": "(КНИТУ (КАИ))",
+    "Education2": "Переводчик в сфере профессиональной коммуникации",
+    "Education2Text": "(КНИТУ (КАИ))",
+    "Education3": "Введение в разработку на JavaScript",
+    "Education3Text": "(SoftLine Education)",
+    "Education4": "Front-End разработчик (JavaScript/React)",
+    "Education4Text": "(RSSchool)",
+    "Education5": "Курсы на Udemy и Codecademy для Web-разработчиков",
+    "Education6": "Различные продвинутые курсы по авиационно-технической тематике",
+    "Languages": "Языки",
+    "Languages1": "B2 — ",
+    "Languages1Text": "Upper Intermediate",
+    "Languages2Text": "Находился в длительной командировке (14 месяцев) в Индии, работая в составе бригады ГТО.",
+    "ProjectsBtn": "МОИ ПРОЕКТЫ"
   }
 }

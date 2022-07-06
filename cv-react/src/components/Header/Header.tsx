@@ -32,13 +32,13 @@ const Header = () => {
             <Link href="#skills" underline="none" color="white">
               {t('Header.Skills')}
             </Link>
-            <Link href="#xp" underline="none" color="white">
+            <Link href="#workxp" underline="none" color="white">
               {t('Header.WorkXp')}
             </Link>
-            <Link href="#education" underline="none" color="white">
+            <Link href="#workxp" underline="none" color="white">
               {t('Header.Education')}
             </Link>
-            <Link href="#languages" underline="none" color="white">
+            <Link href="#workxp" underline="none" color="white">
               {t('Header.Languages')}
             </Link>
             <Link href="#projects" underline="none" color="white">

@@ -48,7 +48,7 @@ const Skills = () => {
               marginBottom: '45px',
             }}
           >
-            What I use in my work:
+            {t('Skills.UsedFeatures')}
           </Typography>
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-item-box">
