@@ -54,5 +54,9 @@
     "Languages1Text": "Upper Intermediate",
     "Languages2Text": "I had been on a business trip to India for 14 months, worked as part of a warranty & maintenance team.",
     "ProjectsBtn": "MY PROJECTS"
+  },
+  "Projects": {
+    "Title": "My projects",
+    "TopBtn": "TO THE TOP"
   }
 }

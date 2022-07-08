@@ -12,6 +12,9 @@ const Main = () => {
 
   return (
     <>
+      {/* <Box id="top" component="div" sx={{ marginTop: '46px' }}>
+        <Typography sx={{ color: 'transparent' }}>Empty div for anchor link</Typography>
+      </Box> */}
       <Box component="section" className="name-container">
         <Box component="div" className="titles">
           <Typography

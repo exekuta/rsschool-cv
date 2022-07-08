@@ -54,5 +54,9 @@
     "Languages1Text": "Upper Intermediate",
     "Languages2Text": "Находился в длительной командировке (14 месяцев) в Индии, работая в составе бригады ГТО.",
     "ProjectsBtn": "МОИ ПРОЕКТЫ"
+  },
+  "Projects": {
+    "Title": "Мои проекты",
+    "TopBtn": "Наверх"
   }
 }

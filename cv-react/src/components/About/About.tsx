@@ -59,7 +59,7 @@ const About = () => {
               src="https://www.youtube.com/embed/W5OqGDJf7jw"
               allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               title={t('AboutMe.VideoCV')}
-              sx={{ width: '560px', height: '315px', border: 'none' }}
+              sx={{ width: '560px', height: '315px', border: '5px solid #fff' }}
             />
           </Box>
         </Box>

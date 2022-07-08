@@ -9,10 +9,65 @@
   margin-top: 70px;
 
   &:before {
-    @include pseudoEl("", absolute, 3871px);
+    @include pseudoEl("", absolute, 4871px);
 
     width: 1340px;
     background: white;
     height: 5px;
   }
+}
+
+.projects {
+  @include dflex(flex-start, flex-start);
+
+  width: 100%;
+}
+
+.projects-left-list {
+  @include dflex(flex-start, flex-start);
+  gap: 30px;
+  flex-wrap: wrap;  
+
+  width: 60%;
+  height: 720px;
+}
+
+.projects-list-item {
+  @include dflex();
+  flex-direction: column;
+}
+
+.projects-list-item-box {
+  width: 352px;
+  height: 250px;
+  background: #D9D9D9;
+  border: 5px solid #FFFFFF;
+  border-radius: 30px;
+}
+
+.projects-right {
+  @include dflex(flex-start, center);
+  flex-direction: column;
+
+  width: 40%;
+  height: 720px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  color: #000;
+}
+
+.project-about {
+  @include dflex();
+
+  width: 480px;
+  height: 343px;
+  background: #D9D9D9;
+  border: 5px solid #1976D2;
+  border-radius: 30px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.project-stack {
+  @include dflex(center, flex-start);
 }
