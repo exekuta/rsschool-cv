@@ -1,8 +1,4 @@
 import React, { useEffect } from 'react';
-// import avatar from './assets/images/avatar.jpg';
-// import player from './assets/images/custom-video-player.png';
-// import clock from './assets/images/js-clock.png';
-// import museum from './assets/images/museum.png';
 import About from '../About/About';
 import Experience from '../Experience/Experience';
 import Footer from '../Footer/Footer';

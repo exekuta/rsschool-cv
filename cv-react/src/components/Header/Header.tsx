@@ -25,7 +25,11 @@ const Header = () => {
           >
             {t('Header.Name')}
           </Link>
-          <Typography className="nav-item" sx={{ fontSize: '26px', fontWeight: '600' }}>
+          <Typography
+            component="span"
+            className="nav-item"
+            sx={{ fontSize: '26px', fontWeight: '600' }}
+          >
             <Link href="#about" underline="none" color="white">
               {t('Header.AboutMe')}
             </Link>

@@ -38,11 +38,19 @@
 }
 
 .projects-list-item-box {
+  @include dflex();
+  
   width: 352px;
   height: 250px;
   background: #D9D9D9;
   border: 5px solid #FFFFFF;
   border-radius: 30px;
+  overflow: hidden;
+}
+
+.projects-list-item-img {
+  max-height: 100%;
+  background-size: cover;
 }
 
 .projects-right {
