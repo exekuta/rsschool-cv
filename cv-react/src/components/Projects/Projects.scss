@@ -2,7 +2,7 @@
 @import "../../assets/scss/mixins";
 
 .projects-container {
-  @include dflex(space-between, flex-start);
+  @include dflex(space-between, flex-end);
 
   flex-direction: column;
   width: 1340px;
@@ -46,6 +46,11 @@
   border: 5px solid #FFFFFF;
   border-radius: 30px;
   overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 .projects-list-item-img {
@@ -78,4 +83,10 @@
 
 .project-stack {
   @include dflex(center, flex-start);
+}
+
+.footer-btn {
+  @include dflex(flex-end, center);
+
+  width: 100%;
 }

@@ -57,6 +57,16 @@
   },
   "Projects": {
     "Title": "My projects",
-    "TopBtn": "TO THE TOP"
+    "TopBtn": "TO THE TOP",
+    "LinkTo": "Link to project",
+    "Stack": "Stack:",
+    "Project1Title": "Kanban application",
+    "Project1Info": "Kanban is an application with extensive possibilities for creating and managing boards.",
+    "Project2Title": "RSLang project",
+    "Project2Info": "RS Lang is an application for learning foreign words, including an electronic textbook with a database of words to learn, mini-games for repeating them and statistics page for tracking individual progress.",
+    "Project3Title": "Louvre project",
+    "Project3Info": "Kanban is an application with extensive possibilities for creating and managing boards.",
+    "Project4Title": "JS Clock project",
+    "Project4Info": "Kanban is an application with extensive possibilities for creating and managing boards."
   }
 }
