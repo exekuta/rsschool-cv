@@ -20,7 +20,8 @@
   },
   "AboutMe": {
     "Title": "About me",
-    "MainText": "I am 36 years old, front-end developer, engineer and father of 2 sons :) Currently live and work in Kazan. I was engaged in the development of business card websites, freelance projects and interactive teaching materials. I have quite a lot of work experience in a team (over 14 years), including in an English-speaking team. I also have work experience (more than 2 years) as a team leader and organizer of the work of a small team (5-6 people)",
+    "MainText1": "Hello! My name is Andrey Pozdnyakov, I am 36 years old, front-end developer, engineer and father of 2 sons :) Currently live and work in Kazan. I am involved in the development of various projects using React.js, Typescript, etc. More details about my projects can be found in the section ",
+    "MainText2": "I have a large work experience in a team (more than 14 years), including in an English-speaking team. I also have work experience (more than 3 years) as a team leader of 5-6 people and the performing various projects",
     "MoreInfo": "More information about me you can see in my VideoCV",
     "SkillsBtn": "MY SKILLS",
     "VideoCV": "My videoCV"
@@ -65,8 +66,8 @@
     "Project2Title": "RSLang project",
     "Project2Info": "RS Lang is an application for learning foreign words, including an electronic textbook with a database of words to learn, mini-games for repeating them and statistics page for tracking individual progress.",
     "Project3Title": "Louvre project",
-    "Project3Info": "Kanban is an application with extensive possibilities for creating and managing boards.",
+    "Project3Info": "WELCOME TO THE LOUVRE. From the castle to the museum",
     "Project4Title": "JS Clock project",
-    "Project4Info": "Kanban is an application with extensive possibilities for creating and managing boards."
+    "Project4Info": "A clock made in JavaScript that shows the current local time and date."
   }
 }

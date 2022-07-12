@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Button, CardMedia } from '@mui/material';
+import { Box, Typography, Button, CardMedia, Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import './About.scss';
 
@@ -39,7 +39,12 @@ const About = () => {
           <Typography
             sx={{ fontSize: '22px', fontWeight: '600', lineHeight: '43px', textAlign: 'right' }}
           >
-            {t('AboutMe.MainText')}
+            {t('AboutMe.MainText1')}
+            <Link href="#projects" sx={{ fontSize: '22px', fontWeight: '600', lineHeight: '43px' }}>
+              {t('Projects.Title')}
+            </Link>
+            <br />
+            {t('AboutMe.MainText2')}
           </Typography>
           <Typography
             sx={{

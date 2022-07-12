@@ -46,7 +46,7 @@ const Experience = () => {
         <Typography sx={{ fontSize: '28px', fontWeight: '400', lineHeight: '42px' }}>
           <strong>{t('Experience.Education4')}</strong> {t('Experience.Education4Text')} -{' '}
           <strong>
-            <Link>certificate</Link>
+            <Link href="https://app.rs.school/certificate/wxae40ws">certificate</Link>
           </strong>
         </Typography>
         <Typography sx={{ fontSize: '28px', fontWeight: '700', lineHeight: '42px' }}>
