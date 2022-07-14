@@ -20,7 +20,7 @@ body {
 .main-container {
   @include dflex();
   flex-direction: column;
-  max-width: 1340px;
+  max-width: 100%;
 }
 
 // @include lg_display_1350() {

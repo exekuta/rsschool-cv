@@ -4,7 +4,7 @@
 .name-container {
   @include dflex(space-between, center);
 
-  width: 1340px;
+  width: 100%;
 }
 
 .titles {
@@ -35,4 +35,10 @@
 
 .contacts-item {
   @include dflex();
+}
+
+@include lg_display_1350() {
+  .name-container {
+    width: 95%;
+  }
 }

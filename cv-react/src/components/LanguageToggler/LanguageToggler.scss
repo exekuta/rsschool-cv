@@ -1,3 +1,6 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
 .button {
   border-color: white;
   color: white;
@@ -5,5 +8,11 @@
   &.active {
     background-color: white;
     color: transparent;
+  }
+}
+
+@include sm_tablet_700() {
+  .button {
+    padding: 5px;
   }
 }

@@ -17,39 +17,32 @@ const Header = () => {
         sx={{ boxShadow: 'none' }}
       >
         <Box component="nav" className="navigation">
-          <Link
-            href="#top"
-            underline="none"
-            color="white"
-            sx={{ fontSize: '42px', fontWeight: '600' }}
-          >
+          <Link href="#top" underline="none" color="white" className="nav-title">
             {t('Header.Name')}
           </Link>
-          <Typography
-            component="span"
-            className="nav-item"
-            sx={{ fontSize: '26px', fontWeight: '600' }}
-          >
-            <Link href="#about" underline="none" color="white">
-              {t('Header.AboutMe')}
-            </Link>
-            <Link href="#skills" underline="none" color="white">
-              {t('Header.Skills')}
-            </Link>
-            <Link href="#workxp" underline="none" color="white">
-              {t('Header.WorkXp')}
-            </Link>
-            <Link href="#workxp" underline="none" color="white">
-              {t('Header.Education')}
-            </Link>
-            <Link href="#workxp" underline="none" color="white">
-              {t('Header.Languages')}
-            </Link>
-            <Link href="#projects" underline="none" color="white">
-              {t('Header.Projects')}
-            </Link>
+          <Box component="div" className="nav-links">
+            <Typography component="span" className="nav-item">
+              <Link href="#about" underline="none" color="white">
+                {t('Header.AboutMe')}
+              </Link>
+              <Link href="#skills" underline="none" color="white">
+                {t('Header.Skills')}
+              </Link>
+              <Link href="#workxp" underline="none" color="white">
+                {t('Header.WorkXp')}
+              </Link>
+              <Link href="#workxp" underline="none" color="white">
+                {t('Header.Education')}
+              </Link>
+              <Link href="#workxp" underline="none" color="white">
+                {t('Header.Languages')}
+              </Link>
+              <Link href="#projects" underline="none" color="white">
+                {t('Header.Projects')}
+              </Link>
+            </Typography>
             <LanguageToggler />
-          </Typography>
+          </Box>
         </Box>
       </AppBar>
     </StyledEngineProvider>
