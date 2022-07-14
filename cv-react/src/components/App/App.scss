@@ -12,7 +12,7 @@ body {
 .page-container {
   @include dflex();
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1340px;
   flex-direction: column;
   color: $pageFontColor;
 }
@@ -22,3 +22,14 @@ body {
   flex-direction: column;
   max-width: 1340px;
 }
+
+// @include lg_display_1350() {
+//   .header-container {
+//     max-width: 1100px;
+
+//     .nav-item {  
+//       gap: 10px;
+//     }
+//   }
+
+// }

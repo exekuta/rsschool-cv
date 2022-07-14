@@ -10,3 +10,21 @@
   top: $top;
   z-index: $zind;
 }
+
+@mixin sm_tablet_start() {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin md_laptop_start() {
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin lg_display_1350() {
+  @media screen and (max-width: 1350px) {
+    @content;
+  }
+}
