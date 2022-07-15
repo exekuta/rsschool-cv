@@ -2,8 +2,6 @@
 @import "../../assets/scss/mixins";
 
 .header-container {
-  // @include dflex(space-between, center);
-  // flex-direction: row;
   max-width: 100%;
 }
 
@@ -40,6 +38,10 @@
     width: 100%;
     background: white;
     height: 5px;
+  }
+
+  .nav-burger {
+    display: none;
   }
 }
 
@@ -93,4 +95,66 @@
       font-size: 32px;
     }
   }
+}
+
+@include sm_tablet_550() {
+  .navigation {
+    .nav-item {
+      font-size: 18px;
+      width: 80%;
+    }
+
+    .nav-title {
+      font-size: 32px;
+      flex-grow: 4;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .nav-burger {
+      @include dflex(space-between, center);
+      gap: 20px;
+      flex-grow: 3;
+    }
+
+    .nav-slider {
+      @include dflex();
+
+      width: 100%;
+      position: absolute;
+      top: 10px;
+      background-color: #16A085;
+      border: 5px solid white;
+      border-radius: 10px;
+    }
+
+    .nav-slider-title {
+      @include dflex(space-between, center);
+      gap: 10px;
+      width: 95%;
+    }
+
+    .nav-slider-links {
+      @include dflex();
+
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+      // position: absolute;
+
+      a {
+        color: white;
+      }
+    }
+
+    .close {
+      display: none;
+    }
+  }
+}
+
+.react-icons {
+  vertical-align: middle;
 }
