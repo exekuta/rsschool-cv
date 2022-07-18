@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyledEngineProvider } from '@mui/material/styles';
 import { AppBar, Box, Link, Typography, ButtonBase } from '@mui/material';
-import { AiOutlineHome, AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineHome, AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
 import LanguageToggler from '../LanguageToggler/LanguageToggler';
 import './Header.scss';
@@ -10,7 +10,6 @@ import './Header.scss';
 const Header = () => {
   const { t } = useTranslation();
   const [showMenu, setShowMenu] = useState(false);
-  // console.log(showMenu);
 
   const closeMenu = () => {
     setShowMenu(false);
@@ -25,6 +24,9 @@ const Header = () => {
         sx={{ boxShadow: 'none' }}
       >
         <Box component="nav" className="navigation">
+          <Link href="#top" underline="none" color="white" className="nav-title">
+            {t('Header.Name')}
+          </Link>
           <Box component="div" className="nav-links">
             <Typography component="span" className="nav-item">
               <Link href="#about" underline="none" color="white" onClick={closeMenu}>
@@ -49,20 +51,20 @@ const Header = () => {
             <LanguageToggler />
           </Box>
           {/* SliderMenu */}
-          <Link href="#top" underline="none" color="white" className="nav-title">
-            {t('Header.Name')}
-          </Link>
           <Box component="div" className="nav-burger">
             <ButtonBase onClick={() => setShowMenu(!showMenu)}>
-              <Typography component="span">MENU</Typography>
+              <IconContext.Provider value={{ size: '20px', className: 'react-icons-header' }}>
+                <AiOutlineMenu />
+              </IconContext.Provider>
+              <Typography component="span">{t('Header.Menu')}</Typography>
             </ButtonBase>
             <LanguageToggler />
           </Box>
-          <Box className={`nav-slider ${showMenu ? 'close' : ''}`}>
+          <Box className={`nav-slider ${!showMenu ? 'close' : ''}`}>
             <Typography component="span" className="nav-slider-links">
               <Box className="nav-slider-title">
                 <Box component="div">
-                  <ButtonBase href="#top">
+                  <ButtonBase href="#top" onClick={closeMenu}>
                     <IconContext.Provider value={{ size: '20px', className: 'react-icons' }}>
                       <AiOutlineHome />
                     </IconContext.Provider>

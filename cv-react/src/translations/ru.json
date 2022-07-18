@@ -10,7 +10,8 @@
     "Projects": "Мои проекты",
     "BtnGroupAriaLabel": "Кнопки переключения языка",
     "LanguageEn": "Англ",
-    "LanguageRu": "Рус"
+    "LanguageRu": "Рус",
+    "Menu": "МЕНЮ"
   },
   "Main": {
     "FirstName": "АНДРЕЙ",

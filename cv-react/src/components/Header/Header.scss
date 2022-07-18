@@ -8,6 +8,7 @@
 .navigation {
   @include dflex(space-between, center);
   padding-top: 4px;
+  backdrop-filter: blur(31px);
 
   .nav-links {
     @include dflex(flex-end, center);
@@ -40,7 +41,8 @@
     height: 5px;
   }
 
-  .nav-burger {
+  .nav-burger,
+  .nav-slider {
     display: none;
   }
 }
@@ -74,12 +76,7 @@
   .navigation {
     .nav-item {  
       flex-wrap: wrap;
-      font-size: 22px;
       row-gap: 0px;
-    }
-
-    .nav-title {
-      font-size: 36px;
     }
   }
 }
@@ -142,7 +139,7 @@
       width: 100%;
       flex-direction: column;
       gap: 10px;
-      // position: absolute;
+      padding: 5px;
 
       a {
         color: white;
@@ -155,6 +152,6 @@
   }
 }
 
-.react-icons {
+.react-icons-header {
   vertical-align: middle;
 }

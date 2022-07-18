@@ -11,18 +11,47 @@
   @include dflex(center, flex-start);
   flex-direction: column;
   height: 800px;
-  // padding-top: 200px;
+
+  .first-name {
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 40px;
+    padding-top: 150px;
+  }
+
+  .second-name {
+    font-size: 96px;
+    font-style: italic;
+  }
+
+  .job-title {
+    font-size: 72px;
+    padding-top: 200px;
+  }
 }
 
-.avatar {
-  @include dflex(center, center);
+.avatar-container {
+  @include dflex();
   flex-direction: column;
+
+  .avatar {
+    width: 335px;
+    height: 335px;
+    border: 5px solid #fff;
+  }
+
+  .aboutme-button {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 40px;
+    margin-top: 200px;
+  }
 }
 
-.contacts {
+.contacts-container {
   @include dflex(space-between, center);
 
-  width: 1340px;
+  width: 100%;
 
   &:before {
     @include pseudoEl("", absolute, 921px);
@@ -31,14 +60,217 @@
     background: white;
     height: 5px;
   }
-}
 
-.contacts-item {
-  @include dflex();
+  .contacts {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    margin-right: 10px;
+  }
+
+  .contacts-item {
+    @include dflex();
+  }
+
+  .contacts-links {
+    @include dflex(); 
+    gap: 25px;
+    height: 42px;
+  }
+
+  .contacts-text {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .react-icons-main {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 @include lg_display_1350() {
-  .name-container {
-    width: 95%;
+  .name-container,
+  .contacts-container {
+    width: 97%;
+
+    &:before {
+      width: 97%;
+    }
   }
+}
+
+@include lg_display_1200() {
+  .contacts-container { 
+    .contacts,
+    .contacts-text {
+      font-size: 22px;
+    }
+
+    .contacts {
+      margin-right: 0px;
+    }
+  
+    .contacts-text {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .react-icons-main {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+@include md_laptop_1000() {
+  .titles {
+    height: 800px;
+
+    .first-name {
+      font-size: 68px;
+      line-height: 40px;
+      padding-top: 130px;
+    }
+  
+    .second-name {
+      font-size: 68px;
+    }
+  
+    .job-title {
+      font-size: 58px;
+      padding-top: 200px;
+    }
+  }
+
+  .avatar-container {  
+    .avatar {
+      width: 285px;
+      height: 285px;
+    }
+  }
+
+  .contacts-container { 
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+
+    .contacts {
+      margin-right: 10px;
+    }
+
+    .contacts-links {
+      gap: 15px;
+    }
+
+    .contacts,
+    .contacts-text {
+      font-size: 18px;
+    }
+
+    .react-icons-main {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 717px) {
+  .titles {
+    height: 750px;
+  }
+}
+
+@include sm_tablet_700() {
+  .titles {
+    .first-name {
+      font-size: 42px;
+      line-height: 40px;
+      padding-top: 80px;
+    }
+  
+    .second-name {
+      font-size: 42px;
+    }
+  
+    .job-title {
+      font-size: 42px;
+      padding-top: 250px;
+    }
+  }
+
+  .avatar-container {  
+    .avatar {
+      width: 235px;
+      height: 235px;
+    }
+  }
+}
+
+@include sm_tablet_550() {
+  .name-container {
+    flex-direction: column;
+  }
+  
+  .titles {
+    height: 300px;
+    align-items: center;
+
+    .first-name {
+      font-size: 42px;
+      line-height: 20px;
+      padding-top: 0px;
+    }
+  
+    .second-name {
+      font-size: 42px;
+    }
+  
+    .job-title {
+      text-align: center;
+      font-size: 42px;
+      padding-top: 50px;
+      line-height: 50px;
+    }
+  }
+
+  .avatar-container {  
+    .avatar {
+      width: 235px;
+      height: 235px;
+    }
+
+    .aboutme-button {
+      margin-top: 81px;
+      margin-bottom: 82px;
+    }
+  } 
+}
+
+@media screen and (max-width: 550px) {
+  .titles {
+    .first-name {
+      padding-top: 30px;
+    }
+
+    .job-title {
+      padding-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .titles {
+    height: 250px;
+  }
+
+  .avatar-container {  
+    .aboutme-button {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+  } 
 }

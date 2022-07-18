@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import About from '../About/About';
 import Experience from '../Experience/Experience';
 import Footer from '../Footer/Footer';
@@ -11,9 +11,9 @@ import './App.scss';
 import MuiTheme from '../MuiTheme/MuiTheme';
 
 function App() {
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-  }, []);
+  // useEffect(() => {
+  //   document.body.style.overflow = 'hidden';
+  // }, []);
 
   return (
     <MuiTheme>

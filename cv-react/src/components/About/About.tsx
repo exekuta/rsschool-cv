@@ -13,9 +13,7 @@ const About = () => {
       </Box>
       <Box component="section" className="about-container">
         <Box component="div" className="about-left-side">
-          <Typography sx={{ fontSize: '42px', fontWeight: '600', lineHeight: '63px' }}>
-            01 // {t('AboutMe.Title')}
-          </Typography>
+          <Typography className="about-left-side-title">01 // {t('AboutMe.Title')}</Typography>
           <Box component="div" className="photos-container">
             <Box component="div" className="photo item1">
               <Typography>Photo 1</Typography>
@@ -26,46 +24,36 @@ const About = () => {
             <Box component="div" className="photo item3">
               <Typography>Photo 3</Typography>
             </Box>
-            <Button
-              variant="contained"
-              href="#skills"
-              sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '40px', marginTop: '50px' }}
-            >
+            <Button variant="contained" href="#skills" className="skills-button">
               {t('AboutMe.SkillsBtn')}
             </Button>
           </Box>
         </Box>
         <Box component="div" className="about-right-side">
-          <Typography
-            sx={{ fontSize: '22px', fontWeight: '600', lineHeight: '43px', textAlign: 'right' }}
-          >
+          <Typography className="about-right-side-title">01 // {t('AboutMe.Title')}</Typography>
+          <Typography className="about-right-side-text" sx={{ textAlign: 'right' }}>
             {t('AboutMe.MainText1')}
-            <Link href="#projects" sx={{ fontSize: '22px', fontWeight: '600', lineHeight: '43px' }}>
+            <Link href="#projects" className="about-right-side-text">
               {t('Projects.Title')}
             </Link>
-            <br />
+          </Typography>
+          <Typography className="about-right-side-text" sx={{ textAlign: 'right' }}>
             {t('AboutMe.MainText2')}
           </Typography>
-          <Typography
-            sx={{
-              fontSize: '22px',
-              fontWeight: '600',
-              lineHeight: '33px',
-              fontStyle: 'italic',
-              marginTop: '50px',
-              textAlign: 'right',
-            }}
-          >
-            {t('AboutMe.MoreInfo')}
-          </Typography>
+          <Typography className="about-right-side-more-info">{t('AboutMe.MoreInfo')}</Typography>
           <Box component="div" className="player">
             <CardMedia
               component="iframe"
               src="https://www.youtube.com/embed/W5OqGDJf7jw"
               allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               title={t('AboutMe.VideoCV')}
-              sx={{ width: '560px', height: '315px', border: '5px solid #fff' }}
+              className="youtube-video"
             />
+          </Box>
+          <Box component="div" className="skills-button-right-container">
+            <Button variant="contained" href="#skills" className="skills-button-right">
+              {t('AboutMe.SkillsBtn')}
+            </Button>
           </Box>
         </Box>
       </Box>
