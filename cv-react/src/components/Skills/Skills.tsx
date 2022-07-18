@@ -39,242 +39,359 @@ const Skills = () => {
       </Box>
       <Box component="section" className="skills-container">
         <Box component="div" className="skills-left-side">
-          <Typography
-            sx={{
-              fontSize: '28px',
-              fontWeight: '600',
-              lineHeight: '42px',
-              textAlign: 'center',
-              marginBottom: '45px',
-            }}
-          >
-            {t('Skills.UsedFeatures')}
-          </Typography>
+          <Typography className="skills-left-side-features">{t('Skills.UsedFeatures')}</Typography>
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '90px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-90' }}>
                 <DiReact />
               </IconContext.Provider>
             </Box>
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <SiTypescript />
               </IconContext.Provider>
             </Box>
           </Box>
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <DiJsBadge />
               </IconContext.Provider>
             </Box>
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <DiCss3 />
               </IconContext.Provider>
             </Box>
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <DiHtml5 />
               </IconContext.Provider>
             </Box>
           </Box>
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '90px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-90' }}>
                 <DiGit />
               </IconContext.Provider>
             </Box>
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '90px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-90' }}>
                 <DiGithubBadge />
               </IconContext.Provider>
             </Box>
           </Box>
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <SiRedux />
               </IconContext.Provider>
             </Box>
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <DiNodejsSmall />
               </IconContext.Provider>
             </Box>
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <DiSass />
               </IconContext.Provider>
             </Box>
           </Box>
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <DiNpm />
               </IconContext.Provider>
             </Box>
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <DiVisualstudio />
               </IconContext.Provider>
             </Box>
           </Box>
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <DiPhotoshop />
               </IconContext.Provider>
             </Box>
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <DiIllustrator />
               </IconContext.Provider>
             </Box>
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <FaFigma />
               </IconContext.Provider>
             </Box>
           </Box>
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <DiTrello />
               </IconContext.Provider>
             </Box>
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <SiGitlab />
               </IconContext.Provider>
             </Box>
           </Box>
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <SiWebpack />
               </IconContext.Provider>
             </Box>
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <SiMaterialui />
               </IconContext.Provider>
             </Box>
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <SiMarkdown />
               </IconContext.Provider>
             </Box>
           </Box>
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <SiStyledcomponents />
               </IconContext.Provider>
             </Box>
             <Box component="div" className="skill-item-box">
-              <IconContext.Provider value={{ size: '75px' }}>
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <FaDiscord />
               </IconContext.Provider>
             </Box>
           </Box>
         </Box>
         <Box component="div" className="skills-right-side">
-          <Typography
-            sx={{ fontSize: '42px', fontWeight: '600', lineHeight: '63px', marginBottom: '25px' }}
-          >
-            02 // {t('Skills.Title')}
-          </Typography>
+          <Typography className="skills-right-side-title">02 // {t('Skills.Title')}</Typography>
           <Box component="div" className="skills-name">
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              React.js
-            </Typography>
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              TypeScript
-            </Typography>
+            <Typography className="skills-right-side-item">React.js</Typography>
+            <Typography className="skills-right-side-item">TypeScript</Typography>
           </Box>
           <Box component="div" className="skills-name item-3pc">
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              JavaScript
-            </Typography>
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              CSS
-            </Typography>
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              HTML
-            </Typography>
+            <Typography className="skills-right-side-item">JavaScript</Typography>
+            <Typography className="skills-right-side-item">CSS</Typography>
+            <Typography className="skills-right-side-item">HTML</Typography>
           </Box>
           <Box component="div" className="skills-name">
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              Git
-            </Typography>
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              GitHub
-            </Typography>
+            <Typography className="skills-right-side-item">Git</Typography>
+            <Typography className="skills-right-side-item">GitHub</Typography>
           </Box>
           <Box component="div" className="skills-name item-3pc">
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              Redux
-            </Typography>
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              Node.JS
-            </Typography>
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              Sass
-            </Typography>
+            <Typography className="skills-right-side-item">Redux</Typography>
+            <Typography className="skills-right-side-item">Node.JS</Typography>
+            <Typography className="skills-right-side-item">Sass</Typography>
           </Box>
           <Box component="div" className="skills-name">
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              npm
-            </Typography>
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              VSCode
-            </Typography>
+            <Typography className="skills-right-side-item">npm</Typography>
+            <Typography className="skills-right-side-item">VSCode</Typography>
           </Box>
           <Box component="div" className="skills-name item-3pc">
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              PhotoShop
-            </Typography>
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              Illustrator
-            </Typography>
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              Figma
-            </Typography>
+            <Typography className="skills-right-side-item">PhotoShop</Typography>
+            <Typography className="skills-right-side-item">Illustrator</Typography>
+            <Typography className="skills-right-side-item">Figma</Typography>
           </Box>
           <Box component="div" className="skills-name">
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              Trello
-            </Typography>
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              GitLab
-            </Typography>
+            <Typography className="skills-right-side-item">Trello</Typography>
+            <Typography className="skills-right-side-item">GitLab</Typography>
           </Box>
           <Box component="div" className="skills-name item-3pc">
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              Webpack
-            </Typography>
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              MaterialUI
-            </Typography>
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              Markdown
-            </Typography>
+            <Typography className="skills-right-side-item">Webpack</Typography>
+            <Typography className="skills-right-side-item">MaterialUI</Typography>
+            <Typography className="skills-right-side-item">Markdown</Typography>
           </Box>
           <Box component="div" className="skills-name">
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              StyledComponents
-            </Typography>
-            <Typography sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '42px' }}>
-              Discord
-            </Typography>
+            <Typography className="skills-right-side-item">StyledComponents</Typography>
+            <Typography className="skills-right-side-item">Discord</Typography>
           </Box>
-          <Box component="div" className="about-btn">
-            <Button
-              variant="contained"
-              href="#workxp"
-              sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '40px' }}
-            >
+          <Box component="div" className="workxp-button-container">
+            <Button variant="contained" href="#workxp" className="workxp-button">
+              {t('Skills.WorkXPBtn')}
+            </Button>
+          </Box>
+        </Box>
+      </Box>
+      {/* Mobile version */}
+      <Box component="section" className="skills-container">
+        <Box component="div" className="skills-left-side">
+          <Typography className="skills-left-side-features">{t('Skills.UsedFeatures')}</Typography>
+          <Box component="div" className="skill-boxes">
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-90' }}>
+                <DiReact />
+              </IconContext.Provider>
+            </Box>
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <SiTypescript />
+              </IconContext.Provider>
+            </Box>
+          </Box>
+          <Box component="div" className="skills-name">
+            <Typography className="skills-right-side-item">React.js</Typography>
+            <Typography className="skills-right-side-item">TypeScript</Typography>
+          </Box>
+          <Box component="div" className="skill-boxes">
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <DiJsBadge />
+              </IconContext.Provider>
+            </Box>
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <DiCss3 />
+              </IconContext.Provider>
+            </Box>
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <DiHtml5 />
+              </IconContext.Provider>
+            </Box>
+          </Box>
+          <Box component="div" className="skills-name item-3pc">
+            <Typography className="skills-right-side-item">JavaScript</Typography>
+            <Typography className="skills-right-side-item">CSS</Typography>
+            <Typography className="skills-right-side-item">HTML</Typography>
+          </Box>
+          <Box component="div" className="skill-boxes">
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-90' }}>
+                <DiGit />
+              </IconContext.Provider>
+            </Box>
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-90' }}>
+                <DiGithubBadge />
+              </IconContext.Provider>
+            </Box>
+          </Box>
+          <Box component="div" className="skills-name">
+            <Typography className="skills-right-side-item">Git</Typography>
+            <Typography className="skills-right-side-item">GitHub</Typography>
+          </Box>
+          <Box component="div" className="skill-boxes">
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <SiRedux />
+              </IconContext.Provider>
+            </Box>
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <DiNodejsSmall />
+              </IconContext.Provider>
+            </Box>
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <DiSass />
+              </IconContext.Provider>
+            </Box>
+          </Box>
+          <Box component="div" className="skills-name item-3pc">
+            <Typography className="skills-right-side-item">Redux</Typography>
+            <Typography className="skills-right-side-item">Node.JS</Typography>
+            <Typography className="skills-right-side-item">Sass</Typography>
+          </Box>
+          <Box component="div" className="skill-boxes">
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <DiNpm />
+              </IconContext.Provider>
+            </Box>
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <DiVisualstudio />
+              </IconContext.Provider>
+            </Box>
+          </Box>
+          <Box component="div" className="skills-name">
+            <Typography className="skills-right-side-item">npm</Typography>
+            <Typography className="skills-right-side-item">VSCode</Typography>
+          </Box>
+          <Box component="div" className="skill-boxes">
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <DiPhotoshop />
+              </IconContext.Provider>
+            </Box>
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <DiIllustrator />
+              </IconContext.Provider>
+            </Box>
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <FaFigma />
+              </IconContext.Provider>
+            </Box>
+          </Box>
+          <Box component="div" className="skills-name item-3pc">
+            <Typography className="skills-right-side-item">PhotoShop</Typography>
+            <Typography className="skills-right-side-item">Illustrator</Typography>
+            <Typography className="skills-right-side-item">Figma</Typography>
+          </Box>
+          <Box component="div" className="skill-boxes">
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <DiTrello />
+              </IconContext.Provider>
+            </Box>
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <SiGitlab />
+              </IconContext.Provider>
+            </Box>
+          </Box>
+          <Box component="div" className="skills-name">
+            <Typography className="skills-right-side-item">Trello</Typography>
+            <Typography className="skills-right-side-item">GitLab</Typography>
+          </Box>
+          <Box component="div" className="skill-boxes">
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <SiWebpack />
+              </IconContext.Provider>
+            </Box>
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <SiMaterialui />
+              </IconContext.Provider>
+            </Box>
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <SiMarkdown />
+              </IconContext.Provider>
+            </Box>
+          </Box>
+          <Box component="div" className="skills-name item-3pc">
+            <Typography className="skills-right-side-item">Webpack</Typography>
+            <Typography className="skills-right-side-item">MaterialUI</Typography>
+            <Typography className="skills-right-side-item">Markdown</Typography>
+          </Box>
+          <Box component="div" className="skill-boxes">
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <SiStyledcomponents />
+              </IconContext.Provider>
+            </Box>
+            <Box component="div" className="skill-item-box">
+              <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
+                <FaDiscord />
+              </IconContext.Provider>
+            </Box>
+          </Box>
+          <Box component="div" className="skills-name">
+            <Typography className="skills-right-side-item">StyledComponents</Typography>
+            <Typography className="skills-right-side-item">Discord</Typography>
+          </Box>
+          <Box component="div" className="workxp-button-container">
+            <Button variant="contained" href="#workxp" className="workxp-button">
               {t('Skills.WorkXPBtn')}
             </Button>
           </Box>

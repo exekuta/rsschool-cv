@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <>
-      <Box id="about" component="div" sx={{ marginTop: '15px' }}>
+      <Box id="about" component="div" sx={{ marginTop: '17px' }}>
         <Typography sx={{ color: 'transparent' }}>Empty div for anchor link</Typography>
       </Box>
       <Box component="section" className="about-container">
