@@ -219,8 +219,9 @@ const Skills = () => {
         </Box>
       </Box>
       {/* Mobile version */}
-      <Box component="section" className="skills-container">
+      <Box component="section" className="skills-container-mobile">
         <Box component="div" className="skills-left-side">
+          <Typography className="skills-right-side-title">02 // {t('Skills.Title')}</Typography>
           <Typography className="skills-left-side-features">{t('Skills.UsedFeatures')}</Typography>
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-item-box">
