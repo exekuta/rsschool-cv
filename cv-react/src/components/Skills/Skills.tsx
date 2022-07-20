@@ -249,7 +249,6 @@ const Skills = () => {
               <Typography className="skills-right-side-item">JavaScript</Typography>
             </Box>
           </Box>
-          {/* <Box component="div" className="skills-name"></Box> */}
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-items-750">
               <Box component="div" className="skill-item-box">
@@ -284,7 +283,6 @@ const Skills = () => {
               <Typography className="skills-right-side-item">GitHub</Typography>
             </Box>
           </Box>
-          {/* <Box component="div" className="skills-name item-3pc"></Box> */}
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-items-750">
               <Box component="div" className="skill-item-box">
@@ -311,7 +309,6 @@ const Skills = () => {
               <Typography className="skills-right-side-item">Sass</Typography>
             </Box>
           </Box>
-          {/* <Box component="div" className="skills-name item-3pc"></Box> */}
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-items-750">
               <Box component="div" className="skill-item-box">
@@ -346,7 +343,6 @@ const Skills = () => {
               <Typography className="skills-right-side-item">Illustrator</Typography>
             </Box>
           </Box>
-          {/* <Box component="div" className="skills-name"></Box> */}
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-items-750">
               <Box component="div" className="skill-item-box">
@@ -373,7 +369,6 @@ const Skills = () => {
               <Typography className="skills-right-side-item">GitLab</Typography>
             </Box>
           </Box>
-          {/* <Box component="div" className="skills-name item-3pc"></Box> */}
           <Box component="div" className="skill-boxes">
             <Box component="div" className="skill-items-750">
               <Box component="div" className="skill-item-box">
@@ -408,7 +403,6 @@ const Skills = () => {
               <Typography className="skills-right-side-item">Styled Components</Typography>
             </Box>
           </Box>
-          {/* <Box component="div" className="skills-name item-3pc"></Box> */}
           <Box component="div" className="workxp-button-container">
             <Button variant="contained" href="#workxp" className="workxp-button">
               {t('Skills.WorkXPBtn')}

@@ -11,7 +11,7 @@
   &:before {
     @include pseudoEl("", absolute, 2921px);
 
-    width: 100%;
+    width: 1340px;
     background: white;
     height: 5px;
   }
@@ -319,24 +319,3 @@
     }
   }
 }
-
-
-// @include lg_display_1350() {
-
-// }
-
-// @include lg_display_1200() {
-
-// }
-
-// @include md_laptop_1000() {
-
-// }
-
-// @include sm_tablet_700() {
-
-// }
-
-// @include sm_tablet_550() {
-  
-// }
