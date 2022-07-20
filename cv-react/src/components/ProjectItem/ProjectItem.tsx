@@ -52,29 +52,8 @@ const ProjectItem: FC<ICardProps> = ({ clickedCard }) => {
 
   return (
     <Box component="div" className="projects-right" key={cardItem.id}>
-      <Typography
-        sx={{
-          textDecorationLine: 'underline',
-          fontSize: '28px',
-          fontWeight: '700',
-          lineHeight: '42px',
-          marginTop: '10px',
-        }}
-      >
-        {cardItem.title}
-      </Typography>
-      <Typography
-        sx={{
-          fontSize: '18px',
-          fontWeight: '700',
-          lineHeight: '27px',
-          marginTop: '10px',
-          textAlign: 'center',
-          width: '90%',
-        }}
-      >
-        {cardItem.info}
-      </Typography>
+      <Typography className="project-title">{cardItem.title}</Typography>
+      <Typography className="project-info">{cardItem.info}</Typography>
       <Box component="div" className="project-about">
         {clickedCard > 2 ? (
           <Box
@@ -89,39 +68,28 @@ const ProjectItem: FC<ICardProps> = ({ clickedCard }) => {
             src={cardItem.aboutLink}
             allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             title={cardItem.title}
-            sx={{ width: '480px', height: '343px', border: 'none' }}
+            sx={{ width: '100%', height: '100%', border: 'none' }}
           />
         )}
       </Box>
-      <Link
-        href={cardItem.projectLink}
-        sx={{ fontSize: '28px', fontWeight: '700', lineHeight: '42px', marginTop: '10px' }}
-      >
+      <Link href={cardItem.projectLink} className="project-title">
         {t('Projects.LinkTo')}
         <IconContext.Provider value={{ size: '35px' }}>
           <SiGithub />
         </IconContext.Provider>
       </Link>
-      <Box component="div" className="project-stack">
+      <Box component="div" className="project-stack-container">
         <Typography
+          className="project-stack bold"
           sx={{
-            fontSize: '18px',
-            fontWeight: '700',
-            lineHeight: '27px',
-            marginTop: '10px',
-            textAlign: 'center',
             width: '10%',
           }}
         >
           {t('Projects.Stack')}
         </Typography>
         <Typography
+          className="project-stack"
           sx={{
-            fontSize: '18px',
-            fontWeight: '400',
-            lineHeight: '27px',
-            marginTop: '10px',
-            textAlign: 'center',
             width: '60%',
           }}
         >
