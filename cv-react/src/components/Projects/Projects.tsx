@@ -19,11 +19,7 @@ const Projects = () => {
         <Typography sx={{ color: 'transparent' }}>Empty div for anchor link</Typography>
       </Box>
       <Box component="section" className="projects-container">
-        <Typography
-          sx={{ fontSize: '42px', fontWeight: '600', lineHeight: '63px', marginBottom: '20px' }}
-        >
-          04 // {t('Projects.Title')}
-        </Typography>
+        <Typography className="projects-title">04 // {t('Projects.Title')}</Typography>
       </Box>
       <Box component="div" className="projects">
         <Box component="div" className="projects-left-list">
@@ -43,11 +39,7 @@ const Projects = () => {
               ></Box>
             </Box>
             <Box component="div">
-              <Typography
-                sx={{ fontSize: '28px', fontWeight: '700', lineHeight: '42px', marginTop: '10px' }}
-              >
-                {t('Projects.Project1Title')}
-              </Typography>
+              <Typography className="projects-item-title">{t('Projects.Project1Title')}</Typography>
             </Box>
           </Box>
           <Box
@@ -66,11 +58,7 @@ const Projects = () => {
               ></Box>
             </Box>
             <Box component="div">
-              <Typography
-                sx={{ fontSize: '28px', fontWeight: '700', lineHeight: '42px', marginTop: '10px' }}
-              >
-                {t('Projects.Project2Title')}
-              </Typography>
+              <Typography className="projects-item-title">{t('Projects.Project2Title')}</Typography>
             </Box>
           </Box>
           <Box
@@ -89,11 +77,7 @@ const Projects = () => {
               ></Box>
             </Box>
             <Box component="div">
-              <Typography
-                sx={{ fontSize: '28px', fontWeight: '700', lineHeight: '42px', marginTop: '10px' }}
-              >
-                {t('Projects.Project3Title')}
-              </Typography>
+              <Typography className="projects-item-title">{t('Projects.Project3Title')}</Typography>
             </Box>
           </Box>
           <Box
@@ -112,11 +96,7 @@ const Projects = () => {
               ></Box>
             </Box>
             <Box component="div">
-              <Typography
-                sx={{ fontSize: '28px', fontWeight: '700', lineHeight: '42px', marginTop: '10px' }}
-              >
-                {t('Projects.Project4Title')}
-              </Typography>
+              <Typography className="projects-item-title">{t('Projects.Project4Title')}</Typography>
             </Box>
           </Box>
         </Box>
@@ -124,12 +104,8 @@ const Projects = () => {
       </Box>
 
       <Box component="div"></Box>
-      <Box component="div" className="footer-btn" sx={{ marginTop: '20px' }}>
-        <Button
-          variant="contained"
-          href="#top"
-          sx={{ fontSize: '28px', fontWeight: '800', lineHeight: '40px' }}
-        >
+      <Box component="div" className="footer-btn-container" sx={{ marginTop: '20px' }}>
+        <Button variant="contained" href="#top" className="footer-btn">
           {t('Projects.TopBtn')}
         </Button>
       </Box>

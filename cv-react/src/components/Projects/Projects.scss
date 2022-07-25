@@ -5,7 +5,7 @@
   @include dflex(space-between, flex-end);
 
   flex-direction: column;
-  width: 1340px;
+  width: 100%;
   margin-top: 70px;
 
   &:before {
@@ -14,6 +14,13 @@
     width: 1340px;
     background: white;
     height: 5px;
+  }
+
+  .projects-title {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    margin-bottom: 20px;
   }
 }
 
@@ -35,6 +42,13 @@
 .projects-list-item {
   @include dflex();
   flex-direction: column;
+
+  .projects-item-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 10px;
+  }
 }
 
 .projects-list-item-box {
@@ -67,12 +81,29 @@
   background: #FFFFFF;
   border-radius: 30px;
   color: #000;
+
+  .project-title {
+    text-decoration: underline;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-top: 10px;
+  }
+
+  .project-info {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-top: 10px;
+    text-align: center;
+    width: 98%;
+  }
 }
 
 .project-about {
   @include dflex();
 
-  width: 480px;
+  width: 95%;
   height: 343px;
   background: #D9D9D9;
   border: 5px solid #1976D2;
@@ -81,12 +112,94 @@
   overflow: hidden;
 }
 
-.project-stack {
+.project-stack-container {
   @include dflex(center, flex-start);
+
+  .project-stack {
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
 }
 
-.footer-btn {
+.footer-btn-container {
   @include dflex(flex-end, center);
 
   width: 100%;
+
+  .footer-btn {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 40px;
+  }
 }
+
+@include lg_display_1350() {
+  .projects-container {
+    width: 97%;
+
+    &:before {
+      width: 97%;
+    }
+  }
+
+  .projects {
+    width: 97%;
+  }
+
+  .projects-list-item-box {
+    width: 300px;
+    height: 213px;
+  }
+
+  .projects-left-list {
+    row-gap: 0px;
+    column-gap: 20px;
+  }
+}
+
+// @include lg_display_1200() {
+
+// }
+
+// @include md_laptop_1000() {
+
+// }
+
+// @include sm_tablet_700() {
+
+// }
+
+// @include sm_tablet_550() {
+  
+// }
+
+
+
+
+
+
+// @include lg_display_1350() {
+
+// }
+
+// @include lg_display_1200() {
+
+// }
+
+// @include md_laptop_1000() {
+
+// }
+
+// @include sm_tablet_700() {
+
+// }
+
+// @include sm_tablet_550() {
+  
+// }
