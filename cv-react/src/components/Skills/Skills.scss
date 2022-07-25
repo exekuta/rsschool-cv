@@ -127,7 +127,6 @@
 
     &:before {
       width: 97%;
-      left: -30px;
     }
   }
 
@@ -193,6 +192,7 @@
     width: 80px;
     height: 80px;
     border-radius: 25px;
+    // box-shadow: 0px 0px 10px 10px white;
   }
 
   .item-3pc {
@@ -210,7 +210,7 @@
     &:before {
       @include pseudoEl("", absolute, 2921px);
   
-      width: 100%;
+      width: 97%;
       background: white;
       height: 5px;
     }

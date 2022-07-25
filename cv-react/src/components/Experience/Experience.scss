@@ -7,6 +7,7 @@
   flex-direction: column;
   width: 100%;
   margin-top: 70px;
+  height: 795px;
 
   &:before {
     @include pseudoEl("", absolute, 3871px);
