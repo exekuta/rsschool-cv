@@ -21,6 +21,7 @@ const Projects = () => {
       <Box component="section" className="projects-container">
         <Typography className="projects-title">04 // {t('Projects.Title')}</Typography>
       </Box>
+      {/* MAIN */}
       <Box component="div" className="projects">
         <Box component="div" className="projects-left-list">
           <Box
@@ -103,7 +104,89 @@ const Projects = () => {
         <ProjectItem clickedCard={clickedCard} />
       </Box>
 
-      <Box component="div"></Box>
+      {/* AFTER 1200PX */}
+      <Box component="div" className="projects-after-1200px">
+        <Box component="div" className="projects-left-list">
+          <Box
+            component="div"
+            className="projects-list-item"
+            onClick={() => {
+              setClickedCard(1);
+            }}
+          >
+            <Box component="div" className="projects-list-item-box">
+              <Box
+                component="img"
+                alt="Kanban application"
+                src={kanban}
+                className="projects-list-item-img"
+              ></Box>
+            </Box>
+            <Box component="div">
+              <Typography className="projects-item-title">{t('Projects.Project1Title')}</Typography>
+            </Box>
+          </Box>
+          <Box
+            component="div"
+            className="projects-list-item"
+            onClick={() => {
+              setClickedCard(2);
+            }}
+          >
+            <Box component="div" className="projects-list-item-box">
+              <Box
+                component="img"
+                alt="RSLang project"
+                src={rslang}
+                className="projects-list-item-img"
+              ></Box>
+            </Box>
+            <Box component="div">
+              <Typography className="projects-item-title">{t('Projects.Project2Title')}</Typography>
+            </Box>
+          </Box>
+          <Box
+            component="div"
+            className="projects-list-item"
+            onClick={() => {
+              setClickedCard(3);
+            }}
+          >
+            <Box component="div" className="projects-list-item-box">
+              <Box
+                component="img"
+                alt="Louvre project"
+                src={museum}
+                className="projects-list-item-img"
+              ></Box>
+            </Box>
+            <Box component="div">
+              <Typography className="projects-item-title">{t('Projects.Project3Title')}</Typography>
+            </Box>
+          </Box>
+          <Box
+            component="div"
+            className="projects-list-item"
+            onClick={() => {
+              setClickedCard(4);
+            }}
+          >
+            <Box component="div" className="projects-list-item-box">
+              <Box
+                component="img"
+                alt="JS Clock project"
+                src={jsclock}
+                className="projects-list-item-img"
+              ></Box>
+            </Box>
+            <Box component="div">
+              <Typography className="projects-item-title">{t('Projects.Project4Title')}</Typography>
+            </Box>
+          </Box>
+        </Box>
+        <ProjectItem clickedCard={clickedCard} />
+      </Box>
+
       <Box component="div" className="footer-btn-container" sx={{ marginTop: '20px' }}>
         <Button variant="contained" href="#top" className="footer-btn">
           {t('Projects.TopBtn')}

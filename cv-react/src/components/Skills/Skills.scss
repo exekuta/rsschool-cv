@@ -115,7 +115,7 @@
   height: 75%;
 } 
 
-@include lg_display_1350() {
+@include lg_display_1360() {
   .skills-name {
     &:before {
       width: 222px;

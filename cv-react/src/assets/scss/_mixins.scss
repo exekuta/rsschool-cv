@@ -35,8 +35,8 @@
   }
 }
 
-@mixin lg_display_1350() {
-  @media screen and (max-width: 1350px) {
+@mixin lg_display_1360() {
+  @media screen and (max-width: 1360px) {
     @content;
   }
 }

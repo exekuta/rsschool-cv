@@ -30,6 +30,10 @@
   width: 100%;
 }
 
+.projects-after-1200px {
+  display: none;
+}
+
 .projects-left-list {
   @include dflex(flex-start, flex-start);
   gap: 30px;
@@ -100,6 +104,10 @@
   }
 }
 
+.projects-right-after-1200px {
+  display: none;
+}
+
 .project-about {
   @include dflex();
 
@@ -139,7 +147,7 @@
   }
 }
 
-@include lg_display_1350() {
+@include lg_display_1360() {
   .projects-container {
     width: 97%;
 
@@ -161,45 +169,217 @@
     row-gap: 0px;
     column-gap: 20px;
   }
+
+  .projects-right {
+    width: 45%;
+  }
+
+  .footer-btn-container {
+    width: 97%;
+  }
 }
 
-// @include lg_display_1200() {
+@include lg_display_1200() {
+  .projects-container { 
+    .projects-title {
+    font-size: 34px;
+    line-height: 43px;
+    margin-bottom: 10px;
+    }
+  }
 
-// }
+  .projects {
+    display: none;
+  }
 
-// @include md_laptop_1000() {
+  .projects-after-1200px {
+    @include dflex(flex-start, center);
+    flex-direction: column;
 
-// }
+    width: 97%;
+  }
 
-// @include sm_tablet_700() {
+  .projects-left-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 
-// }
+    width: 100%;
+    height: fit-content;
+  }
 
-// @include sm_tablet_550() {
-  
-// }
+  .projects-list-item-box {
+    width: 250px;
+    height: 178px;
+  }
 
+  .projects-right-after-1200px {
+    width: 97%;
+    height: fit-content;
+    padding-bottom: 20px;
 
+    @include dflex(flex-start, center);
+    flex-direction: column;
 
+    background: #FFFFFF;
+    border-radius: 30px;
+    color: #000;
 
+    .project-title {
+      text-decoration: underline;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 42px;
+      margin-top: 10px;
+    }
 
+    .project-info {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px;
+      margin-top: 10px;
+      text-align: center;
+      width: 98%;
+    }
+  }
 
-// @include lg_display_1350() {
+  .project-about-container {
+    @include dflex();
+    flex-direction: row;
+    width: 97%;
+    gap: 20px;
+  }
 
-// }
+  .container-with-link {
+    @include dflex();
+    flex-direction: column;
 
-// @include lg_display_1200() {
+    width: 55%;
+  }
 
-// }
+  .project-stack-container {
+    @include dflex();
+    flex-direction: column;
+    width: 35%;
 
-// @include md_laptop_1000() {
+    .project-stack {
+      width: 100%;
+    }
+  }
 
-// }
+  .projects-right {
+    display: none;
+  }
+}
 
-// @include sm_tablet_700() {
+@media screen and (max-width: 1100px) {
+  .projects-list-item-box {
+    width: 200px;
+    height: 142px;
+  }
 
-// }
+  .projects-list-item {
+    .projects-item-title {
+      font-size: 22px;
+      line-height: 36px;
+    }
+  }
+}
 
-// @include sm_tablet_550() {
-  
-// }
+@media screen and (max-width: 890px) {
+  .projects-list-item-box {
+    width: 150px;
+    height: 106px;
+  }
+
+  .projects-list-item {
+    .projects-item-title {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+
+  .container-with-link {
+    width: 60%;
+  }
+
+  .project-stack-container {
+    width: 30%;
+  }
+}
+
+@include sm_tablet_700() {
+  .projects-container {
+    align-items: center;
+
+    .projects-title {
+      font-size: 28px;
+      line-height: 42px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .projects-left-list {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70%;
+    row-gap: 0px;
+  }
+
+  .projects-list-item {
+    .projects-item-title {
+      margin-bottom: 0px;
+    }
+  }
+
+  .project-about-container {
+    flex-direction: column;
+    gap: 0px;
+
+    .project-about {
+      width: 85%;
+      height: 243px;
+    }
+  }
+
+  .container-with-link {
+    width: 100%;
+
+    .project-title {
+      font-size: 22px;
+      line-height: 36px;
+      margin-top: 5px;
+    }
+  }
+
+  .projects-right-after-1200px {
+    .project-title {
+      font-size: 22px;
+      line-height: 36px;
+      margin-top: 5px;
+    }
+
+    .project-info {
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 5px;
+    }
+  }
+
+  .project-stack-container {
+    width: 100%;
+    flex-direction: column;
+
+    .project-stack {
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 5px;
+    }
+  }
+}
+
+@include sm_tablet_550() {
+  .projects-left-list {
+    width: 90%;
+  }
+}

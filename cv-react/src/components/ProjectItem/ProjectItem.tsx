@@ -51,52 +51,108 @@ const ProjectItem: FC<ICardProps> = ({ clickedCard }) => {
   const cardItem = projects[clickedCard - 1];
 
   return (
-    <Box component="div" className="projects-right" key={cardItem.id}>
-      <Typography className="project-title">{cardItem.title}</Typography>
-      <Typography className="project-info">{cardItem.info}</Typography>
-      <Box component="div" className="project-about">
-        {clickedCard > 2 ? (
-          <Box
-            component="img"
-            alt={cardItem.title}
-            src={cardItem.aboutLink}
-            sx={{ maxHeight: '100%' }}
-          ></Box>
-        ) : (
-          <CardMedia
-            component="iframe"
-            src={cardItem.aboutLink}
-            allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            title={cardItem.title}
-            sx={{ width: '100%', height: '100%', border: 'none' }}
-          />
-        )}
+    <>
+      {/* MAIN */}
+      <Box component="div" className="projects-right" key={cardItem.id}>
+        <Typography className="project-title">{cardItem.title}</Typography>
+        <Typography className="project-info">{cardItem.info}</Typography>
+        <Box component="div" className="project-about">
+          {clickedCard > 2 ? (
+            <Box
+              component="img"
+              alt={cardItem.title}
+              src={cardItem.aboutLink}
+              sx={{ maxHeight: '100%' }}
+            ></Box>
+          ) : (
+            <CardMedia
+              component="iframe"
+              src={cardItem.aboutLink}
+              allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              title={cardItem.title}
+              sx={{ width: '100%', height: '100%', border: 'none' }}
+            />
+          )}
+        </Box>
+        <Link href={cardItem.projectLink} className="project-title">
+          {t('Projects.LinkTo')}
+          <IconContext.Provider value={{ size: '35px' }}>
+            <SiGithub />
+          </IconContext.Provider>
+        </Link>
+        <Box component="div" className="project-stack-container">
+          <Typography
+            className="project-stack bold"
+            sx={{
+              width: '10%',
+            }}
+          >
+            {t('Projects.Stack')}
+          </Typography>
+          <Typography
+            className="project-stack"
+            sx={{
+              width: '60%',
+            }}
+          >
+            {cardItem.stack}
+          </Typography>
+        </Box>
       </Box>
-      <Link href={cardItem.projectLink} className="project-title">
-        {t('Projects.LinkTo')}
-        <IconContext.Provider value={{ size: '35px' }}>
-          <SiGithub />
-        </IconContext.Provider>
-      </Link>
-      <Box component="div" className="project-stack-container">
-        <Typography
-          className="project-stack bold"
-          sx={{
-            width: '10%',
-          }}
-        >
-          {t('Projects.Stack')}
-        </Typography>
-        <Typography
-          className="project-stack"
-          sx={{
-            width: '60%',
-          }}
-        >
-          {cardItem.stack}
-        </Typography>
+
+      {/* AFTER 1200PX */}
+      <Box component="div" className="projects-right-after-1200px" key={cardItem.id}>
+        <Typography className="project-title">{cardItem.title}</Typography>
+        <Typography className="project-info">{cardItem.info}</Typography>
+        <Box component="div" className="project-about-container">
+          <Box component="div" className="container-with-link">
+            <Box component="div" className="project-about">
+              {clickedCard > 2 ? (
+                <Box
+                  component="img"
+                  alt={cardItem.title}
+                  src={cardItem.aboutLink}
+                  sx={{ maxHeight: '100%' }}
+                ></Box>
+              ) : (
+                <CardMedia
+                  component="iframe"
+                  src={cardItem.aboutLink}
+                  allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  title={cardItem.title}
+                  sx={{ width: '100%', height: '100%', border: 'none' }}
+                />
+              )}
+            </Box>
+            <Link href={cardItem.projectLink} className="project-title">
+              {t('Projects.LinkTo')}
+              <IconContext.Provider value={{ size: '35px' }}>
+                <SiGithub />
+              </IconContext.Provider>
+            </Link>
+          </Box>
+
+          <Box component="div" className="project-stack-container">
+            <Typography
+              className="project-stack bold"
+              sx={{
+                width: '10%',
+              }}
+            >
+              {t('Projects.Stack')}
+            </Typography>
+            <Typography
+              className="project-stack"
+              sx={{
+                width: '60%',
+              }}
+            >
+              {cardItem.stack}
+            </Typography>
+          </Box>
+        </Box>
       </Box>
-    </Box>
+    </>
   );
 };
 
