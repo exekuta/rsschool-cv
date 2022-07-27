@@ -4,6 +4,7 @@ import { FaPhone, FaEnvelope, FaPrint } from 'react-icons/fa';
 import { SiCodewars, SiGithub, SiTelegram } from 'react-icons/si';
 import { IconContext } from 'react-icons';
 import { useTranslation } from 'react-i18next';
+import myCV from '../../assets/pdf/Pozdnyakov_Andrey.pdf';
 import avatar from '../../assets/images/avatar.jpg';
 import './Main.scss';
 
@@ -46,10 +47,7 @@ const Main = () => {
           <Typography className="contacts-text">@exekuta</Typography>
         </Box>
         <Box component="div" className="contacts-links">
-          <Link
-            href="https://app.rs.school/cv/18683e07-f4e2-4eb9-91df-8ebec97e3ad7"
-            sx={{ color: 'red' }}
-          >
+          <Link href={myCV} sx={{ color: 'red' }}>
             <IconContext.Provider value={{ className: 'react-icons-main' }}>
               <FaPrint />
             </IconContext.Provider>

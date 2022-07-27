@@ -1,6 +1,9 @@
 import React from 'react';
 import { Box, Typography, Button, CardMedia, Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import Photo1 from '../../assets/images/Photo1.jpg';
+import Photo2 from '../../assets/images/Photo2.jpg';
+import Photo3 from '../../assets/images/Photo3.jpg';
 import './About.scss';
 
 const About = () => {
@@ -15,15 +18,9 @@ const About = () => {
         <Box component="div" className="about-left-side">
           <Typography className="about-left-side-title">01 // {t('AboutMe.Title')}</Typography>
           <Box component="div" className="photos-container">
-            <Box component="div" className="photo item1">
-              <Typography>Photo 1</Typography>
-            </Box>
-            <Box component="div" className="photo item2">
-              <Typography>Photo 2</Typography>
-            </Box>
-            <Box component="div" className="photo item3">
-              <Typography>Photo 3</Typography>
-            </Box>
+            <Box component="img" src={Photo3} className="photo item1"></Box>
+            <Box component="img" src={Photo1} className="photo item2"></Box>
+            <Box component="img" src={Photo2} className="photo item3"></Box>
             <Button variant="contained" href="#skills" className="skills-button">
               {t('AboutMe.SkillsBtn')}
             </Button>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, Button, Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import certificate from '../../assets/images/certificate.jpg';
 import './Experience.scss';
 
 const Experience = () => {
@@ -34,13 +35,15 @@ const Experience = () => {
         <Typography className="experience-text">
           <strong>{t('Experience.Education3')}</strong> {t('Experience.Education3Text')} -{' '}
           <strong>
-            <Link>{t('Experience.Certificate')}</Link>
+            <Link href={certificate} target="_blank">
+              {t('Experience.Certificate')}
+            </Link>
           </strong>
         </Typography>
         <Typography className="experience-text">
           <strong>{t('Experience.Education4')}</strong> {t('Experience.Education4Text')} -{' '}
           <strong>
-            <Link href="https://app.rs.school/certificate/wxae40ws">
+            <Link href="https://app.rs.school/certificate/wxae40ws" target="_blank">
               {t('Experience.Certificate')}
             </Link>
           </strong>
