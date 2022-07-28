@@ -7,7 +7,7 @@
 
 .navigation {
   @include dflex(space-between, center);
-  padding-top: 4px;
+  // padding-top: 4px;
   backdrop-filter: blur(31px);
 
   .nav-links {
@@ -34,7 +34,7 @@
   }
 
   &:before {
-    @include pseudoEl("", absolute, 71px);
+    @include pseudoEl("", absolute, 61px);
 
     width: 100%;
     background: white;
