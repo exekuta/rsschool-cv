@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import {
   SiGitlab,
@@ -30,7 +30,12 @@ import { useTranslation } from 'react-i18next';
 import './Skills.scss';
 
 const Skills = () => {
+  const [isActive, setIsActive] = useState(false);
   const { t } = useTranslation();
+
+  const toggleActive = (id: number) => {
+    setIsActive(!isActive);
+  };
 
   return (
     <>
@@ -41,7 +46,7 @@ const Skills = () => {
         <Box component="div" className="skills-left-side">
           <Typography className="skills-left-side-features">{t('Skills.UsedFeatures')}</Typography>
           <Box component="div" className="skill-boxes">
-            <Box component="div" className="skill-item-box">
+            <Box component="div" className={`skill-item-box ${isActive ? 'active-box' : ''}`}>
               <IconContext.Provider value={{ className: 'react-icons-skills-90' }}>
                 <DiReact />
               </IconContext.Provider>
@@ -172,7 +177,15 @@ const Skills = () => {
         <Box component="div" className="skills-right-side">
           <Typography className="skills-right-side-title">02 // {t('Skills.Title')}</Typography>
           <Box component="div" className="skills-name">
-            <Typography className="skills-right-side-item">React.js</Typography>
+            <Typography
+              className="skills-right-side-item"
+              id="1"
+              onClick={() => {
+                toggleActive(1);
+              }}
+            >
+              React.js
+            </Typography>
             <Typography className="skills-right-side-item">TypeScript</Typography>
           </Box>
           <Box component="div" className="skills-name item-3pc">
