@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { useState } from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import {
@@ -31,11 +32,16 @@ import './Skills.scss';
 
 const Skills = () => {
   const [isActive, setIsActive] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [chosenCard, setChosenCard] = useState(-1);
   const { t } = useTranslation();
 
-  const toggleActive = (id: number) => {
+  const toggleActive = () => {
     setIsActive(!isActive);
   };
+
+  console.log(chosenCard);
+  console.log(isActive);
 
   return (
     <>
@@ -46,29 +52,44 @@ const Skills = () => {
         <Box component="div" className="skills-left-side">
           <Typography className="skills-left-side-features">{t('Skills.UsedFeatures')}</Typography>
           <Box component="div" className="skill-boxes">
-            <Box component="div" className={`skill-item-box ${isActive ? 'active-box' : ''}`}>
+            <Box
+              component="div"
+              className={`skill-item-box ${isActive && chosenCard === 1 ? 'active-box' : ''}`}
+            >
               <IconContext.Provider value={{ className: 'react-icons-skills-90' }}>
                 <DiReact />
               </IconContext.Provider>
             </Box>
-            <Box component="div" className="skill-item-box">
+            <Box
+              component="div"
+              className={`skill-item-box ${isActive && chosenCard === 2 ? 'active-box' : ''}`}
+            >
               <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <SiTypescript />
               </IconContext.Provider>
             </Box>
           </Box>
           <Box component="div" className="skill-boxes">
-            <Box component="div" className="skill-item-box">
+            <Box
+              component="div"
+              className={`skill-item-box ${isActive && chosenCard === 3 ? 'active-box' : ''}`}
+            >
               <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <DiJsBadge />
               </IconContext.Provider>
             </Box>
-            <Box component="div" className="skill-item-box">
+            <Box
+              component="div"
+              className={`skill-item-box ${isActive && chosenCard === 4 ? 'active-box' : ''}`}
+            >
               <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <DiCss3 />
               </IconContext.Provider>
             </Box>
-            <Box component="div" className="skill-item-box">
+            <Box
+              component="div"
+              className={`skill-item-box ${isActive && chosenCard === 5 ? 'active-box' : ''}`}
+            >
               <IconContext.Provider value={{ className: 'react-icons-skills-75' }}>
                 <DiHtml5 />
               </IconContext.Provider>
@@ -179,19 +200,51 @@ const Skills = () => {
           <Box component="div" className="skills-name">
             <Typography
               className="skills-right-side-item"
-              id="1"
               onClick={() => {
-                toggleActive(1);
+                toggleActive();
+                setChosenCard(1);
               }}
             >
               React.js
             </Typography>
-            <Typography className="skills-right-side-item">TypeScript</Typography>
+            <Typography
+              className="skills-right-side-item"
+              onClick={() => {
+                toggleActive();
+                setChosenCard(2);
+              }}
+            >
+              TypeScript
+            </Typography>
           </Box>
           <Box component="div" className="skills-name item-3pc">
-            <Typography className="skills-right-side-item">JavaScript</Typography>
-            <Typography className="skills-right-side-item">CSS</Typography>
-            <Typography className="skills-right-side-item">HTML</Typography>
+            <Typography
+              className="skills-right-side-item"
+              onClick={() => {
+                toggleActive();
+                setChosenCard(3);
+              }}
+            >
+              JavaScript
+            </Typography>
+            <Typography
+              className="skills-right-side-item"
+              onClick={() => {
+                toggleActive();
+                setChosenCard(4);
+              }}
+            >
+              CSS
+            </Typography>
+            <Typography
+              className="skills-right-side-item"
+              onClick={() => {
+                toggleActive();
+                setChosenCard(5);
+              }}
+            >
+              HTML
+            </Typography>
           </Box>
           <Box component="div" className="skills-name">
             <Typography className="skills-right-side-item">Git</Typography>
